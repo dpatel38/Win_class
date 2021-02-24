@@ -1,0 +1,123 @@
+* {box-sizing: border-box;}
+.font-one{
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#logo {
+    background-color: red;
+    font-size: 20px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color:red;
+  color: white;
+}
+
+/* .topnav a.active {
+  background-color: #2196F3;
+  color: white;
+} */
+
+.topnav .search-container {
+  float: left;
+  padding: 20px 30px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgb(236, 20, 20);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+.textcontainer {
+    margin-top: 100px;
+}
+.footer {
+    overflow: hidden;
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+ul li {
+	display: inline-block;
+	float: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: red;
+}
+.cart {
+    color: white;
+    float: right;
+    margin-top: 20px;
+}
+#cart-image {
+    background-color: white;
+    color: black;
+}
+#signin:hover, #cart-image:hover {
+    background-color: red;
+}
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}

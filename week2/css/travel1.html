@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Travel Site</title>
+    <meta charset="UFT-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <h1 class="spain">Welcome to my Travel Site</h1>
+    <p style="color:blue;">This site is all about where I want to travel.</p>
+    <p id="uber">This site is all about where I want to travel.</p>
+    <p>This site is all about where I want to travel.</p>
+
+    <h2 class="spain">Here are some places I'd like to visit</h2>
+    <div>
+        <ul id="list">
+            <li >
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" width="50">
+                <a href="http://www.spain.info/en_US/" target="_blank">Spain</a>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" width="50">
+                <a href="http://www.italia.it/en/home.html" target="_blank">Italy</a>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg" width="50">
+                <a href="http://www.arubatourism.com/" target="_blank">Aruba</a>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" width="50">
+                <a href="https://www.travelalaska.com/" target="_blank">Alaska</a>
+            </li>
+        </ul>
+    </div>
+    <h2>Where do you want to visit?</h2>
+    <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name"><br>
+        <p>Select any that apply:</p>
+        <label for="spain">Spain</label>
+        <input type="checkbox" id="spain" name="spain"><br>
+
+        <label for="france">France</label>
+        <input type="checkbox" id="france" name="france"><br>
+
+        <label for="portugal">Portugal</label>
+        <input type="checkbox" id="portugal" name="portugal"><br>
+
+        <label for="china">China</label>
+        <input type="checkbox" id="china" name="china"><br>
+
+        <label for="type">What is your favorite type of travel locations?
+            <select id="type" name="type">
+                <option value="beach">Beach</option>
+                <option value="mountains">Mountains</option>
+                <option value="city" selected>City</option>
+            </select>
+        </label>
+        <!-- This is where our list ended -->
+        <br><br>
+        <textarea id="bio" name="bio" rows="7" cols="50">
+            Tell me a bit more about yourself.
+          </textarea>
+        <br><br>
+        <input  id="input-btn" type=submit value="Ok Go!">
+    </form>
+    <table>
+        <tr>
+            <th>Destination</th>
+            <th>Capital</th>
+            <th>Official Language</th>
+        </tr>
+        <tr>
+            <td>Spain</td>
+            <td>Madrid</td>
+            <td>Spanish</td>
+        </tr>
+        <tr>
+            <td>Italy</td>
+            <td>Rome</td>
+            <td>Italian</td>
+        </tr>
+        <tr>
+            <td>Aruba</td>
+            <td>Oranjestad</td>
+            <td>Dutch</td>
+        </tr>
+        <tr>
+            <td>Alaska</td>
+            <td>Juneau</td>
+            <td>n/a</td>
+        </tr>
+    </table>
+</body>
+
+</html>

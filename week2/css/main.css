@@ -1,0 +1,40 @@
+h1{
+    color:brown;
+}
+p{
+    color:red;
+}
+#uber{
+    color:darkmagenta;
+}
+.spain{
+    text-align: center;
+}
+#list{
+    list-style-type: none;
+    text-align: center;
+}
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+#input-btn:hover{
+    color:darkseagreen;
+    background-color: floralwhite;
+}
