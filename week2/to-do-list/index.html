@@ -10,13 +10,13 @@
 <body>
     <div id="myDIV" class="header">
         <h2>My To Do List</h2>
-        <input type="text" id="myInput" placeholder="List items...">
+        <input type="text" onfocus=this.value='' id="myInput" placeholder="List items...">
         <span onclick="newElement()" class="addBtn">Add</span>
     </div>
       
     <ul id="myUL">
         <li>Do homework</li>
-        <li class="checked">Pay bills</li>
+        <li >Pay bills</li>
         <li>Meet friends</li>
         <li>Buy vegetables</li>
         <li>Read a book</li>
