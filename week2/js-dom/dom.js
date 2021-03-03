@@ -56,4 +56,4 @@ list.innerHTML = '';
 })
 
 //5
-list.children[1].className = "important"
+list.children[1].className = "important";
