@@ -74,6 +74,7 @@ redP.style.color = "red";
 let div = document.querySelector('#container');
 div.appendChild(redP);
 
+
 let blueH3 = document.createElement('h3');
 blueH3.innerHTML = "I’m a blue h3!";
 blueH3.style.color = "blue";
