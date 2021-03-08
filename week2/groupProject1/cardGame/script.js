@@ -39,8 +39,8 @@ document.addEventListener("click", () => {
 
 startGame()
 function startGame() {
-  const deck = new Deck()
-  deck.shuffle()
+  const deck = new Deck();
+  deck.shuffle();
 
   const deckMidpoint = Math.ceil(deck.numberOfCards / 2)
   playerDeck = new Deck(deck.cards.slice(0, deckMidpoint))
