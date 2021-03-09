@@ -1,7 +1,10 @@
 //Calculate Tip
 function calculateTip() {
+    //except user input value for bill amount
     var billAmt = document.getElementById("billamt").value;
+    //except select value for service
     var serviceQual = document.getElementById("serviceQual").value;
+    // except user input for num of people sharing the bill
     var numOfPeople = document.getElementById("peopleamt").value;
   
     //validate input

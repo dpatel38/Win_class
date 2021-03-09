@@ -9,9 +9,7 @@
         background: linear-gradient(to left, #900C3F, #581845);
        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-      }
-    
-   
+      }   
     
   #container {
     height: 525px;
@@ -78,7 +76,7 @@
   
   #serviceQual {
     padding: 10px 10px 15px 15px;
-    margin-left: 5px;
+    margin-left: 25px;
     font-size: 20px;
   }
   
@@ -86,6 +84,7 @@
     text-transform: uppercase;
     font-weight: bold;
     display: block;
+
     margin: 30px auto;
     background-image: linear-gradient(120deg, #ff3c00 , #fdf905 );
     border-radius: 5px;
