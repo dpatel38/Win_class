@@ -5,8 +5,8 @@
 * The PATCH request MUST include a single resource object as primary data. The resource object MUST contain type and id members.
 
 * For example:
-PATCH /articles/1 HTTP/1.1  /*(URL+endpoint for the patch request )*/
-Content-Type: application/vnd.api+json  /*(content-type display that this is a JSON object)*/
+PATCH /articles/1 HTTP/1.1  (URL+endpoint for the patch request )
+// Content-Type: application/vnd.api+json  (content-type display that this is a JSON object)
 Accept: application/vnd.api+json
 /*(Below is the single object with id=1 that we want to update)*/
 {
