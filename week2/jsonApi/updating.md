@@ -5,11 +5,11 @@
 * The PATCH request MUST include a single resource object as primary data. The resource object MUST contain type and id members.
 
 * For example:
-PATCH /articles/1 HTTP/1.1  (URL+endpoint for the patch request )
-// Content-Type: application/vnd.api+json  (content-type display that this is a JSON object)
-Accept: application/vnd.api+json
-/*(Below is the single object with id=1 that we want to update)*/
-{
+* PATCH /articles/1 HTTP/1.1  (URL+endpoint for the patch request )
+* Content-Type: application/vnd.api+json  (content-type display that this is a JSON object)
+* Accept: application/vnd.api+json
+* (Below is the single object with id=1 that we want to update)
+* {
   "data": {
     "type": "articles",
     "id": "1",
@@ -41,16 +41,17 @@ Accept: application/vnd.api+json
 ## POST vs PUT vs PATCH:
 
 ### POST :
-You use POST to create a resource and instruct the server to make a Uniform Resource Identifier (URI) for it. 
+* You use POST to create a resource and instruct the server to make a Uniform Resource Identifier (URI) for it. 
 For example, when you want to create a new article you would POST to /articles to make the file and get the URI, so you end up with /articles/1234/. 
 ### PUT :
-PUT also creates resources, but it does so for a known URI. So, you can PUT to /articles/1234/. If the article doesn't exist, PUT creates it. If it does exist, this HTTP verb updates it. While PUT seems nearly identical to POST, the difference between the two comes down to idempotence. 
-Idempotence is a property that creates identical side effects whether you have one or many results. PUT has this characteristic, while POST creates new resources infinitely. In general, POST works best for resource creation, while PUT handles updates. 
+* PUT also creates resources, but it does so for a known URI. So, you can PUT to /articles/1234/. If the article doesn't exist, PUT creates it. If it does exist, this HTTP verb updates it. While PUT seems nearly identical to POST, the difference between the two comes down to idempotence. 
+* Idempotence is a property that creates identical side effects whether you have one or many results. PUT has this characteristic, while POST creates new resources infinitely. In general, POST works best for resource creation, while PUT handles updates. 
 ### PATCH :
-So, where does PATCH come into the picture? This HTTP verb partially updates resources without sending the complete representation of it. When you're working with complicated objects and resources, it's a big deal to update more than you need to.  
-With this example...
+* So, where does PATCH come into the picture? This HTTP verb partially updates resources without sending the complete representation of it. When you're working with complicated objects and resources, it's a big deal to update more than you need to.  
+* With this example...
 { "first_name": "Claude", "last_name": "Elements", "email": "claude@cloud-elements.com", "favorite_color": "blue" }
-...PATCH allows you to change the color with JSON :{ "favorite_color": "purple" }.
+* ...PATCH allows you to change the color with 
+JSON :{ "favorite_color": "purple" }.
 
 
 ## Responses:
