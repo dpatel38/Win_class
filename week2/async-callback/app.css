@@ -1,0 +1,16 @@
+body{
+    background-color: darkgray;
+    color:firebrick;
+    text-align: center;
+    
+}
+#callMe {
+    background-color: firebrick;
+    color:floralwhite;
+}
+* {
+    box-sizing: border-box;
+}
+li{
+    margin: 50px;
+}
