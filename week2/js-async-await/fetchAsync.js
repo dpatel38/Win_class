@@ -11,8 +11,7 @@ async function showCity(){
     document.body.append(lati);
 
     let long = document.createElement('h2');
-    long.innerHTML = `Longitude: ${json.longt}`;
-    
+    long.innerHTML = `Longitude: ${json.longt}`;    
     long.className = "fetch-latt-example";
     document.body.append(long);
     

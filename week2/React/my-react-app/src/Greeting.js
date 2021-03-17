@@ -18,12 +18,12 @@ function useLocalStorageState(key, defaultValue = '') {
     const handleChange = event => setName(event.target.value)
 
     return (
-      <div>
+      <div>        
+        <h1>{name ? <strong>Hello {name}</strong> : 'Please type your name'}</h1>
         <form>
           <label htmlFor="name">Name: </label>
           <input value={name} onChange={handleChange} id="name" />
         </form>
-        <h2>{name ? <strong>Hello {name}</strong> : 'Please type your name'}</h2>
       </div>
     )
   }

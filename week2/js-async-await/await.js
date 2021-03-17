@@ -5,7 +5,6 @@ function getRandomNumber(ms) {
 
     });
 }
-
 // function that will print the numbers in correct order, with delays
 async function print(num) {
     for (let i = 1; i <= num; i++) {

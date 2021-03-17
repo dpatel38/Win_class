@@ -1,22 +1,23 @@
-
- const state = {eventCount: 0, username: ''}
+import React from 'react';
+ //const state = {eventCount: 0, username: ''}
 
  function Event() {
+  let [eventCount, setEventCount] = React.useState(0);
    function handleClick() {
-     setState({eventCount: state.eventCount + 1})
+    setEventCount(eventCount + 1);
    }
-
+   let [username, setUsername] = React.useState('');
    function handleChange(event) {
-     setState({username: event.target.value})
+    setUsername( event.target.value);
    }
 
    return (
      <div>
-       <p>There have been {state.eventCount} events.</p>
+       <p>There have been {eventCount} events.</p>
        <p>
          <button onClick={handleClick}>Click Me</button>
        </p>
-       <p>You typed: {state.username}</p>
+       <p>You typed: {username}</p>
        <p>
          <input onChange={handleChange} />
        </p>
@@ -24,12 +25,5 @@
    )
  }
 
- function setState(newState) {
-    Object.assign(state, newState)
-   
-
- }
-
  
-
  export default Event;
