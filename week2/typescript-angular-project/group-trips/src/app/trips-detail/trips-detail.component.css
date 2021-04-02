@@ -4,7 +4,7 @@
     max-height: 450px;
     /* border: 2px solid black; */
     text-align: center;
-    color: teal;
+    color: #57350A;
     box-sizing: content-box;
     
 
@@ -13,4 +13,8 @@
   .card-img-top {
     height: 400px;
     object-fit: cover;
+  }
+  .card-text{
+      font-size: 18px;
+      font-weight: bold;
   }

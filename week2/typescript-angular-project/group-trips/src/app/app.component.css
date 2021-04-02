@@ -7,12 +7,18 @@ a {
     text-decoration: none;
     margin-top: 10px;
     margin-right: 5px;
-    display: inline-block;
-    background-color: #eee;
+    /* display: inline-block; */
+    background-color: #57350A;
     border-radius: 4px;
+    color: #D1BC94;
+    font-size: 20px;
+    /* text-align: center; */
+    
+    
+
   }
   nav a:visited, a:link {
-    color: #334953;
+    color: #D1BC94;
   }
   nav a:hover {
     color: #039be5;
@@ -21,4 +27,41 @@ a {
   nav a.active {
     color: #039be5;
   }
+
+  @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+  /* fontawesome */
+  [class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  body {
+    background: #e6e6d8 url('https://dl.dropboxusercontent.com/s/t0gu051d08sei65/bg-retro-noise.png');
+    color: #121212;
+  }
+  
+  
+  h1 {
+    font-family: "Oswald", Sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
+    text-align: center;
+  }
+  
+  
+  h3 {
+    font-family: "Open Sans", Sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;  
+    position: relative;
+  }
+   
   
