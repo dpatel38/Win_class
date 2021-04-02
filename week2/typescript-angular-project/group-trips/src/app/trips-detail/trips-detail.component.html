@@ -1,0 +1,12 @@
+<div class="card trip" *ngIf="trip">
+    <h2>{{trip.name}} Dream Trip</h2>
+	<img 
+    src={{trip.image}} 
+    class="card-img-top" 
+    alt="tripImage">
+	<div class="card-body">
+		<h5 class="card-title"><span>Location: </span>{{trip.location}}	</h5>
+		<div class="card-text"> <span>Description: </span>{{trip.description}}</div>
+		
+	</div>
+</div>

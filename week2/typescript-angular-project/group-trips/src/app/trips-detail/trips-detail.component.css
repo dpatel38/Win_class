@@ -1,0 +1,16 @@
+.card {
+    /* margin-bottom: 15px; */
+    min-height: 425px;
+    max-height: 450px;
+    /* border: 2px solid black; */
+    text-align: center;
+    color: teal;
+    box-sizing: content-box;
+    
+
+  }
+  
+  .card-img-top {
+    height: 400px;
+    object-fit: cover;
+  }
