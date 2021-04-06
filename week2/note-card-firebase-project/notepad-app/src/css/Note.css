@@ -1,0 +1,20 @@
+.card-view {
+    margin: 8px 0;
+  }
+
+.delete{
+    margin-left: 20px;
+}
+
+
+.body-textarea {
+  resize: none;
+  width: 100%;
+}
+
+.title-textarea {
+  font-size: 24px;
+  font-weight: bold;
+  resize: none;
+  width: 100%;
+}
