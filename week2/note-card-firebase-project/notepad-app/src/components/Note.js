@@ -2,18 +2,19 @@ import React, {Component} from 'react';
 import '../css/Note.css';
 import PropTypes from 'prop-types'; // be sure to include this
 
-const GENERIC_NOTE_TITLE = "New Note Title", GENERIC_NOTE_BODY = "New Note Body";
+
 class Note extends Component {  
   constructor(props) {
     super(props);
+    
     this.titleContent = React.createRef();
     this.bodyContent = React.createRef(); 
+    
     this.state = {
-      title: GENERIC_NOTE_TITLE, 
-      body: GENERIC_NOTE_BODY,
+      title: this.props.title,
+      body: this.props.body,
       editMode: false
     }
-
   }
   handleEdit() {
     this.setState({
@@ -21,12 +22,24 @@ class Note extends Component {
     });
   }
 
+  // handleSave() {
+  //   this.setState({
+  //     title: this.titleContent.current.value,
+  //     body: this.bodyContent.current.value,
+  //     editMode: false
+  //   });
+  // }
   handleSave() {
     this.setState({
-      title: this.titleContent.current.value,
-      body: this.bodyContent.current.value,
-      editMode: false
-    });
+    title: this.titleContent.current.value,
+    body: this.bodyContent.current.value,
+    editMode: false
+    }, () => 
+      this.props.firebaseDBRef.child(this.props.id).set({
+        title: this.state.title,
+        body: this.state.body
+      })
+    )
   }
   handleDelete() {
     this.props.deleteHandler(this.props.id);
